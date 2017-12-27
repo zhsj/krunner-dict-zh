@@ -1,0 +1,15 @@
+[Desktop Entry]
+Name=Chinese Dict
+Name[zh_CN]=中文词典
+Comment=Lookup word in Chinese meanings
+Comment[zh_CN]=查询单词的中文释义
+X-KDE-ServiceTypes=Plasma/Runner
+Type=Service
+Icon=accessories-dictionary
+X-KDE-Library=krunner_dict_zh
+X-KDE-PluginInfo-Author=Shengjing Zhu
+X-KDE-PluginInfo-Email=i@zhsj.me
+X-KDE-PluginInfo-Name=dict_zh
+X-KDE-PluginInfo-Version=0.1.0
+X-KDE-PluginInfo-License=BSD
+X-KDE-PluginInfo-EnabledByDefault=true

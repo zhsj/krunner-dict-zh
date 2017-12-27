@@ -1,0 +1,22 @@
+Source: krunner-dict-zh
+Section: kde
+Priority: optional
+Maintainer: Shengjing Zhu <i@zhsj.me>
+Build-Depends: cmake (>= 2.8.12~),
+               debhelper (>= 10),
+               extra-cmake-modules (>= 1.0.0~),
+               libkf5runner-dev,
+               qtbase5-dev,
+Standards-Version: 4.1.2
+Homepage: https://github.com/zhsj/krunner-dict-zh
+Vcs-Browser: https://github.com/zhsj/krunner-dict-zh
+Vcs-Git: https://github.com/zhsj/krunner-dict-zh.git
+
+Package: plasma-runner-dict-zh
+Architecture: any
+Built-Using: ${misc:Built-Using},
+Depends: ${misc:Depends},
+         ${shlibs:Depends},
+Description: Chinese dictionary KRunner plugin
+ This package provides a KRunner plugin which allows you to query
+ word's Chinese meanings.
