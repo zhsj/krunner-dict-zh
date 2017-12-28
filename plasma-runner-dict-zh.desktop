@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=Chinese Dict
 Name[zh_CN]=中文词典
-Comment=Lookup word in Chinese meanings
+Comment=Lookup Chinese meanings of a word
 Comment[zh_CN]=查询单词的中文释义
 X-KDE-ServiceTypes=Plasma/Runner
 Type=Service

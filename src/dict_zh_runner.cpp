@@ -1,7 +1,5 @@
 #include "dict_zh_runner.h"
 
-#include <iostream>
-
 #include <KLocalizedString>
 
 #include <QApplication>
@@ -22,7 +20,7 @@ DictZhRunner::DictZhRunner(QObject *parent, const QVariantList &args):
 
     m_triggerWord = QString("zh");
     setSyntaxes(QList<Plasma::RunnerSyntax>() << Plasma::RunnerSyntax(
-            Plasma::RunnerSyntax(QString("%1:q:").arg(m_triggerWord), i18n("Lookup :q: in Chinese meanings.")))
+            Plasma::RunnerSyntax(QString("%1:q:").arg(m_triggerWord), i18n("Lookup Chinese meanings of :q:.")))
         );
 
     m_youdao = new Youdao(this);
@@ -43,7 +41,6 @@ void DictZhRunner::match(Plasma::RunnerContext &context)
     if (query.isEmpty())
         return;
 
-    std::cout << "find match: " << query.toStdString() << std::endl;
     QEventLoop loop;
     emit(startQuery(query.trimmed()));
     connect(m_youdao, SIGNAL(finished()), &loop, SLOT(quit()));

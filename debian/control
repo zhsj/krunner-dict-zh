@@ -6,6 +6,7 @@ Build-Depends: cmake (>= 2.8.12~),
                debhelper (>= 10),
                extra-cmake-modules (>= 1.0.0~),
                libkf5runner-dev,
+               libkf5windowsystem-dev,
                qtbase5-dev,
 Standards-Version: 4.1.2
 Homepage: https://github.com/zhsj/krunner-dict-zh
@@ -17,6 +18,6 @@ Architecture: any
 Built-Using: ${misc:Built-Using},
 Depends: ${misc:Depends},
          ${shlibs:Depends},
-Description: Chinese dictionary KRunner plugin
- This package provides a KRunner plugin which allows you to query
- word's Chinese meanings.
+Description: Chinese dictionary Krunner plugin
+ This package provides a Krunner plugin which allows you to query
+ Chinese meanings of a English word.

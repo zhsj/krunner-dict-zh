@@ -1,6 +1,6 @@
 #include "youdao.h"
 
-#include <iostream>
+#include <KLocalizedString>
 
 Youdao::Youdao(QObject *parent)
     : QObject(parent)
@@ -40,6 +40,10 @@ QStringList Youdao::result()
                 results << i.toString();
             }
         }
+    }
+    if(results.isEmpty())
+    {
+        results << i18n("No results");
     }
     return results;
 }
